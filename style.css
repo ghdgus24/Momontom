@@ -1,10 +1,41 @@
 body {
     background-color: #ecf0f1;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
-    color: #34495e;
+li {
+    list-style: none;
+    color: #fff;
+    font-size: 24px;
+}
+h2 {
+    color: #fff;
+}
+
+.form_container {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 24px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: -70px;
+}
+
+
+.js-title {
+    color: #fff;
+    font-size: 120px;
+    font-weight: bolder;
     transition: color 0.3s ease-in-out;
+    text-align: center;
+}
+
+.js-clock {
+    margin-top: 5%;
+    margin-bottom: 0;
 }
 
 .clicked {
@@ -15,6 +46,13 @@ h1 {
     cursor: pointer;
 }
 
+.js-greetings {
+    color: #fff;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 .form,
 .greetings {
     display: none;
@@ -23,7 +61,13 @@ h1 {
 .showing {
     display: block;
 }
-
+.js-weather {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 20px;
+}
 @keyframes fadeIn {
     from{
         opacity: 0;
